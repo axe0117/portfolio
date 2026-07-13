@@ -1,8 +1,10 @@
-//my attempt at trying to put a 3d model in a webpage bc three.js was too hard and
-//setup took way too long for just a simple model import
+//cursor trail
+// const coords = { x: 0, y: 0 };
 
-//anyway I dug into game files using a software and had to convert the model file
-//into an fbx using blender so if this works,
+// window.addEventListener("mousemove", function (e) {
+// 	coords.x = e.clientX;
+// 	coords.y = e.clientY;
 
-//Model made by Cygames
-
+// 	console.log(coords);
+// });
+//https://www.youtube.com/watch?v=IKOwKiVt_x8&list=PL4FL-XepWXttYviyLh0yEiNOhAj_qCYs4&index=14
