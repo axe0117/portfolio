@@ -25,12 +25,13 @@
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-
+	cursor: url('soul.png'), auto;
 }
 
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
+	--nav-load-time: 300ms;
 }
 
 h1 {
@@ -40,28 +41,37 @@ h1 {
 }
 
 header {
-	cursor: url('soul.png'), auto;
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 3rem 9%;
+	padding: 2rem 9%;
 	background-color: rgba(0, 0, 0, 0.6);
 	backdrop-filter: blur(10px);
 	display: flex;
 	justify-content: space-between; /* main axis */
 	align-items: center; /* cross axis */
+	z-index: 100;
 }
 
 .logo {
 	font-size: 3rem;
 	color: var(--text-color);
-	cursor: pointer;
+	cursor: url('soul.png'), auto;
 	transition: 0.3s ease-in-out;
 }
 
 .logo:hover {
 	transform: scale(1.1);
+}
+
+ul,
+a {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+	color: black;
 }
 
 .navbar a {
@@ -76,8 +86,13 @@ header {
 .navbar a:hover,
 .navbar a.active {
 	color: var(--main-color);
-	border-bottom: 3px solid var(--main-color);
-	cursor: url('soul.png'), auto
+	cursor: url('soul.png'), auto;
+}
+.navbar img {
+	opacity: 0;
+}
+.navbar a.active img {
+	opacity: 1;
 }
 
 #menu-icon {
@@ -86,51 +101,164 @@ header {
 	display: none;
 }
 
-ul,
-a {
-	list-style: none;
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
-	font-size: 28px;
-	color: black;
-	font-family: 'FOT-Yuruka Std';
+section {
+	min-height: 100vh;
+	padding: 10rem 9% 10rem;
 }
 
-/* nav {
+.home {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-left: 5%;
-	padding-right: 5%;
-} */
-
-ul {
-	max-width: 30%;
-	padding-left: 5%;
-	padding-right: 5%;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-between;
+	flex-direction: column;
+	gap: 1rem;
+}
+.home-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 3rem;
+}
+span {
+	color: var(--main-color);
+}
+.logo span {
+	color: var(--main-color);
+}
+.home-content h3 {
+	font-size: clamp(1.5rem, 3vw, 3.5rem);
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+.home-content h1 {
+	font-size: clamp(2.5rem, 8vw, 7rem);
+	font-weight: 700;
+	margin-top: 1.5rem;
+	line-height: 1;
+}
+
+.home-img {
+	border-radius: 50%;
+}
+
+.home-img img {
+	position: relative;
+	top: 3rem;
+	width: 22vw;
+	border-radius: 50%;
+	box-shadow: 0 0 25px orange;
+	/* cursor: url('soul.png'), auto; */
+	transition: 0.4s ease-in-out;
+}
+.home-img img:hover {
+	box-shadow:
+		0 0 50px orange,
+		0 0 100px orange;
+}
+.home-content p {
+	font-size: 1.5rem;
+	font-weight: 500;
+	max-width: 1000px;
+}
+
+.text-animation {
+	font-size: clamp(18px, 4vw, 34px);
+	font-weight: 600;
+	min-width: 280px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.text-animation span {
+	position: relative;
+}
+.text-animation span::before {
+	content: 'Web Developer';
+	color: var(--main-color);
+	animation: words 20s infinite;
+}
+.text-animation span::after {
+	content: '';
+	background-color: var(--bg-color);
+	position: absolute;
+	width: calc(100% + 8px);
+	height: 100%;
+	border-left: 3px solid var(--bg-color);
+	right: -8px;
+	animation:
+		cursor 0.6s infinite,
+		typing 20s steps(15) infinite;
+}
+@keyframes cursor {
+	to {
+		border-left: 2px solid var(--main-color);
+	}
+}
+@keyframes words {
+	0%,
+	20% {
+		content: 'Web Developer';
+	}
+	21%,
+	40% {
+		content: 'App Developer';
+	}
+	41%,
+	60% {
+		content: 'Game Developer';
+	}
+	61%,
+	80% {
+		content: '3D Animator';
+	}
+	81%,
+	100% {
+		content: 'Software Tester';
+	}
+}
+@keyframes typing {
+	10%,
+	15%,
+	30%,
+	35%,
+	50%,
+	55%,
+	70%,
+	75%,
+	90%,
+	95% {
+		width: 0;
+	}
+	5%,
+	20%,
+	25%,
+	40%,
+	45%,
+	60%,
+	65%,
+	80%,
+	85% {
+		width: calc(100% + 8px);
+	}
 }
 
 a:hover {
 	color: blueviolet;
 }
 
-
-/* ----------ogurin running-------------------- */
+/* ----------------------------oguri running css---------------------------------------- */
 .image-container {
 	position: relative;
 	width: 256px;
+	height: 256px;
 }
 
 .image-container img {
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 100%;
 	object-fit: contain;
 	position: absolute;
 }
@@ -146,6 +274,7 @@ a:hover {
 	opacity: 0;
 }
 
+/* -----------------------------view transition css---------------------------------------- */
 @media (prefers-reduced-motion: no-preference) {
 	@view-transition {
 		navigation: auto;
@@ -184,9 +313,4 @@ a:hover {
 			translate: 100vw;
 		}
 	}
-}
-
-.light-mode{
-	background: white;
-	color: black;
 }

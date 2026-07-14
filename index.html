@@ -2,7 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<title>Adrian Erfe's Portfolio</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
 		<link
 			rel="stylesheet"
 			href="style.css"
@@ -11,29 +21,88 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navbar">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="project.html">Projects</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
+			<!-- <a
+				href="index.html"
+				class="logo"
+				>Adrian <span>Erfe</span></a
+			> -->
 			<div class="image-container">
 				<img
-					src="oguridance.gif"
+					src="ogudance.gif"
 					alt="Default View"
 					class="img-base"
 				/>
 				<img
-					src="ogurun.gif"
+					src="ogucaprun.gif"
 					alt="Hover View"
 					class="img-hover"
 				/>
 			</div>
+
+			<nav class="navbar navbar-expand-lg">
+				<a
+					href="index.html"
+					class="active"
+					><img
+						src="soul.png"
+						alt="Soul Icon"
+					/>
+					Home</a
+				>
+				<a href="about.html"
+					><img
+						src="soul.png"
+						alt="Soul Icon"
+					/>
+					About</a
+				>
+				<a href="exp.html"
+					><img
+						src="soul.png"
+						alt="Soul Icon"
+					/>
+					Experience</a
+				>
+				<a href="project.html"
+					><img
+						src="soul.png"
+						alt="Soul Icon"
+					/>
+					Projects</a
+				>
+			</nav>
+		</header>
+		<main>
+			<section
+				class="home"
+				id="home"
+			>
+				<div class="home-img">
+					<img src="axetao.png" />
+				</div>
+
+				<div class="home-content">
+					<h1>This is <span>my stuff</span></h1>
+					<h3 class="text-animation">
+						I'm just a guy who's a <span></span> <br />for fun.
+					</h3>
+
+					<p>I make things.</p>
+
+					<div class="socials">
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</div>
+			</section>
 		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
 		<script src="script.js"></script>
 	</body>
 </html>
