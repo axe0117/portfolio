@@ -121,6 +121,9 @@ section {
 	text-align: center;
 	margin-top: 3rem;
 }
+.home-content h1{
+	margin-bottom: 10px;
+}
 span {
 	color: var(--main-color);
 }
