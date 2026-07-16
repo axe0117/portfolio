@@ -80,3 +80,5 @@ learned animated page loading (unsure if it even works) from:
 https://www.youtube.com/watch?v=nJ81DFmgHdU&t=1s
 
 https://lucid.app/lucidchart/1b8d0c5f-780f-4dd9-8238-66b7be76cd65/edit?viewport_loc=-680%2C-709%2C4436%2C2162%2C0_0&invitationId=inv_89866482-565e-4640-b1a5-d84b51e471b5 - wireframe (also found in "theplan.pdf")
+
+link: https://axe0117.github.io/portfolio/
