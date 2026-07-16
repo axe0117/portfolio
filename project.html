@@ -24,11 +24,20 @@
 	</head>
 	<body>
 		<header class="header">
-			<!-- <a
-				href="index.html"
-				class="logo"
-				>Adrian <span>Erfe</span></a
-			> -->
+			<div class="form-check form-switch">
+				<input
+					class="form-check-input"
+					type="checkbox"
+					role="switch"
+					id="toggleButton"
+				/>
+				<label
+					class="form-check-label"
+					for="toggleButton"
+					id="toggleLabel"
+					>Dark Mode</label
+				>
+			</div>
 			<div class="image-container">
 				<img
 					src="ogudance.gif"
@@ -42,7 +51,7 @@
 				/>
 			</div>
 
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar">
 				<a href="index.html"
 					><img
 						src="soul.png"
@@ -75,7 +84,178 @@
 				>
 			</nav>
 		</header>
-
+		<main>
+			<section class="page-section">
+				<h1 class="about-title">Websites</h1>
+				<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="col">
+						<div class="card">
+							<img
+								src="cc1.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Care Connect 1</h5>
+								<p class="card-text">
+									Care Connect 1 was established to deliver an exceptionally
+									compassionate and knowledgably customer service experience
+									with live agents and nurses to all your patients and
+									healthcare partners.
+								</p>
+								<a
+									href="https://www.careconnect1.com"
+									target="_blank"
+									class="btn btn-primary"
+									>Visit</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img
+								src="nshc.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">National Senior Home Care</h5>
+								<p class="card-text">
+									National Senior Homecare is a licensed, Pennsylvania-based
+									home care provider dedicated to helping seniors and
+									individuals with disabilities live safely and independently at
+									home.
+								</p>
+								<a
+									href="https://www.nationalseniorhomecare.com"
+									target="_blank"
+									class="btn btn-primary"
+									>Visit</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img
+								src="aaint.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Algar Ally International</h5>
+								<p class="card-text">
+									Algar Ally International is a visionary global cross-border
+									accelerator committed to accelerating progress through the
+									fusion of intelligent technologies and human-centered
+									services. We partner with governments, businesses, and
+									communities to deliver transformative solutions that address
+									real-world challenges—at scale and across borders.
+								</p>
+								<a
+									href="https://www.algarallyinternational.org/"
+									target="_blank"
+									class="btn btn-primary"
+									>Visit</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img
+								src="atc.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Alexia Travel Care</h5>
+								<p class="card-text">
+									Alexia Travel Care is an innovative travel healthcare and
+									lifestyle benefits platform designed to support international
+									tourists visiting the Philippines by providing access to
+									healthcare services, emergency assistance, travel support, and
+									exclusive savings through a trusted network of healthcare
+									providers, hotels, restaurants, retail stores, transportation
+									partners, and tourism-related businesses.
+								</p>
+								<a
+									href="https://www.alexiatravelcare.com"
+									target="_blank"
+									class="btn btn-primary"
+									>Visit</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-section">
+				<h1 class="about-title">Discord Bots</h1>
+				<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="col">
+						<div class="card">
+							<img
+								src="migu.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">migu</h5>
+								<p class="card-text">
+									A small Hatsune Miku inspired chat discord bot experiment with
+									slash commands and fun interactions made with discordpy
+								</p>
+								<p>(icon made by @evans__exe)</p>
+								<a
+									href="https://discord.com/oauth2/authorize?client_id=1361441336397529229"
+									target="_blank"
+									class="btn btn-primary disabled"
+									>Offline</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img
+								src="pepo.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">pepo</h5>
+								<p class="card-text">
+									A small Kasane Teto inspired chat discord bot experiment with
+									slash commands and fun interactions made with discordjs
+								</p>
+								<p>(icon made by @evans__exe)</p>
+								<a
+									href="https://discord.com/oauth2/authorize?client_id=1362052078318653620"
+									target="_blank"
+									class="btn btn-primary disabled"
+									>Offline</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div
+				class="corner-image"
+				id="cornerImage"
+			>
+				<a href="#">
+					<img
+						src="miku-point.gif"
+						alt="Corner decoration"
+					/>
+				</a>
+			</div>
+		</footer>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

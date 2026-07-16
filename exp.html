@@ -24,11 +24,20 @@
 	</head>
 	<body>
 		<header class="header">
-			<!-- <a
-				href="index.html"
-				class="logo"
-				>Adrian <span>Erfe</span></a
-			> -->
+			<div class="form-check form-switch">
+				<input
+					class="form-check-input"
+					type="checkbox"
+					role="switch"
+					id="toggleButton"
+				/>
+				<label
+					class="form-check-label"
+					for="toggleButton"
+					id="toggleLabel"
+					>Dark Mode</label
+				>
+			</div>
 			<div class="image-container">
 				<img
 					src="ogudance.gif"
@@ -42,7 +51,7 @@
 				/>
 			</div>
 
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar">
 				<a href="index.html"
 					><img
 						src="soul.png"
@@ -76,6 +85,174 @@
 			</nav>
 		</header>
 
+		<main>
+			<section class="page-section">
+				<h1 class="about-title">Experience</h1>
+				<div class="card-grid">
+					<div class="proj-card">
+						<div class="card-top">
+							<button
+								class="accordion-button card-toggle"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseOne"
+								aria-expanded="false"
+								aria-controls="collapseOne"
+							>
+								<h4>Google CSSI Program</h4>
+								<p>Full-Stack Intern July 2022 - Aug 2022</p>
+							</button>
+						</div>
+						<div
+							id="collapseOne"
+							class="accordion-collapse collapse"
+						>
+							<div class="accordion-body">
+								<ul>
+									<li>
+										<p>
+											Participated in a 4-week intensive computer science summer
+											program for eager computer science students
+										</p>
+									</li>
+									<li>
+										<p>
+											Completed an introductory project-based HTML/CSS and
+											JavaScript curriculum taught by Google engineers
+										</p>
+									</li>
+									<li>
+										<p>
+											Collaborated in the development of a website using
+											HTML/CSS + JavaScript to track the statistics and provide
+											all related resources for Covid-19.
+										</p>
+									</li>
+									<li>
+										<p>
+											Delivered a collaborative final project presentation and
+											live demonstration to Google Staff and Community Leaders
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="proj-card">
+						<div class="card-top">
+							<button
+								class="accordion-button card-toggle"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo"
+								aria-expanded="false"
+								aria-controls="collapseTwo"
+							>
+								<h4>Care Connect 1</h4>
+								<p>E-commerce Manager, Treasurer October 2024 - Present</p>
+							</button>
+						</div>
+						<div
+							id="collapseTwo"
+							class="accordion-collapse collapse"
+						>
+							<div class="accordion-body">
+								<ul>
+									<li>
+										<p>
+											Created the careconnect1.com website, business email, and
+											graphics including logos, flyers, business cards, and
+											pamphlets.
+										</p>
+									</li>
+									<li>
+										<p>
+											Managed the company’s monthly spending including
+											maintaining the domain name and other business expenses
+										</p>
+									</li>
+									<li>
+										<p>
+											Participated in networking and advertising efforts for the
+											company
+										</p>
+									</li>
+									<li>
+										<p>
+											Facilitated major team plans and communications using
+											Clickup, WhatsApp, Facebook Messenger, and Zoom.
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="proj-card">
+						<div class="card-top">
+							<button
+								class="accordion-button card-toggle"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseThree"
+								aria-expanded="false"
+								aria-controls="collapseThree"
+							>
+								<h4>Algar Ally International</h4>
+								<p>Web Master November 2025 - Present</p>
+							</button>
+						</div>
+						<div
+							id="collapseThree"
+							class="accordion-collapse collapse"
+						>
+							<div class="accordion-body">
+								<ul>
+									<li>
+										<p>
+											Participated in a 4-week intensive computer science summer
+											program for eager computer science students
+										</p>
+									</li>
+									<li>
+										<p>
+											Completed an introductory project-based HTML/CSS and
+											JavaScript curriculum taught by Google engineers
+										</p>
+									</li>
+									<li>
+										<p>
+											Collaborated in the development of a website using
+											HTML/CSS + JavaScript to track the statistics and provide
+											all related resources for Covid-19.
+										</p>
+									</li>
+									<li>
+										<p>
+											Delivered a collaborative final project presentation and
+											live demonstration to Google Staff and Community Leaders
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div
+				class="corner-image"
+				id="cornerImage"
+			>
+				<a href="#">
+					<img
+						src="miku-point.gif"
+						alt="Corner decoration"
+					/>
+				</a>
+			</div>
+		</footer>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
