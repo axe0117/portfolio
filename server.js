@@ -35,6 +35,10 @@ server.on("request", (req, res) => {
         res.writeHead(200, {"Content-type": "text/javascript"});
         fs.createReadStream("./script.js").pipe(res);
     }
+    else if(url === "/soul.png") {
+        res.writeHead(200, {"content-type": "image/png"});
+        fs.createReadStream("./soul.png").pipe(res);
+    }
 })
 
 
